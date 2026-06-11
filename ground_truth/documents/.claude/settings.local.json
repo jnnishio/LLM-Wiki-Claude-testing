@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/jason/Github/LLM-Wiki-Claude-testing/ground_truth)",
+      "Read(//Users/jason/Github/LLM-Wiki-Claude-testing/**)"
+    ]
+  }
+}

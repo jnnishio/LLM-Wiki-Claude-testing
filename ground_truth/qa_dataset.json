@@ -1,0 +1,852 @@
+{
+  "metadata": {
+    "corpus": "Veltrix Research Consortium Synthetic Knowledge Base",
+    "version": "1.0",
+    "created": "2024-06-10",
+    "total_documents": 25,
+    "total_questions": 100,
+    "description": "Ground truth QA dataset for evaluating AI retrieval systems. Covers single-document retrieval, multi-document reasoning, ambiguity handling, and hallucination resistance."
+  },
+
+  "single_document_retrieval": [
+    {
+      "id": "SDR-001",
+      "question": "What is the project code for Project NOVA?",
+      "correct_answer": "VRC-ATM-2201",
+      "source_documents": ["document_01.md"],
+      "section": "Project Details table",
+      "difficulty": "easy",
+      "format": "table"
+    },
+    {
+      "id": "SDR-002",
+      "question": "What is the aggregate voltage-referred noise floor of the Kryon-7 (Rev 3.2) across the full spectral range?",
+      "correct_answer": "4.72 × 10⁻⁸ V/√Hz",
+      "source_documents": ["document_02.md"],
+      "section": "Appendix B: Noise Floor Detail",
+      "difficulty": "hard",
+      "format": "appendix",
+      "notes": "Value buried in appendix footnote"
+    },
+    {
+      "id": "SDR-003",
+      "question": "What is the latitude of Oswick Station?",
+      "correct_answer": "74°23'19.4\" N",
+      "source_documents": ["document_03.md"],
+      "section": "Section 2: Location and Access — table",
+      "difficulty": "medium",
+      "format": "table"
+    },
+    {
+      "id": "SDR-004",
+      "question": "Who is the Principal Investigator of Project HELIOS?",
+      "correct_answer": "Dr. Osias Prewitt",
+      "source_documents": ["document_04.md"],
+      "section": "Program Parameters table",
+      "difficulty": "easy",
+      "format": "table"
+    },
+    {
+      "id": "SDR-005",
+      "question": "What sub-ice pressure threshold is specified in the SUPERSEDED Clearwater Protocol (v1.0) for suspending sampling?",
+      "correct_answer": "1.43 bar",
+      "source_documents": ["document_05.md"],
+      "section": "Section 5.2: Pressure Monitoring",
+      "difficulty": "medium",
+      "format": "prose",
+      "notes": "This document is superseded; correct current threshold is 1.67 bar in document_06.md"
+    },
+    {
+      "id": "SDR-006",
+      "question": "What sub-ice pressure threshold is specified in the CURRENT Clearwater Protocol (v2.3) for suspending sampling?",
+      "correct_answer": "1.67 bar",
+      "source_documents": ["document_06.md"],
+      "section": "Section 5.2: Pressure Monitoring",
+      "difficulty": "medium",
+      "format": "prose"
+    },
+    {
+      "id": "SDR-007",
+      "question": "How many active members does Team Velanthor have as of Charter Revision 4?",
+      "correct_answer": "12",
+      "source_documents": ["document_07.md"],
+      "section": "Section 2.1: Current Roster",
+      "difficulty": "easy",
+      "format": "prose and table"
+    },
+    {
+      "id": "SDR-008",
+      "question": "What is the empty mass of the Atlas baseline platform?",
+      "correct_answer": "22.4 kg",
+      "source_documents": ["document_08.md"],
+      "section": "Section 2.1: Physical — table",
+      "difficulty": "easy",
+      "format": "table"
+    },
+    {
+      "id": "SDR-009",
+      "question": "What is the CRC-32 integrity code for the Atlas-X Rev 4.1 firmware image?",
+      "correct_answer": "A3F7C901",
+      "source_documents": ["document_09.md"],
+      "section": "Section 6: System Identifiers and Integrity Codes — table",
+      "difficulty": "hard",
+      "format": "table"
+    },
+    {
+      "id": "SDR-010",
+      "question": "What is the maximum operating depth of the Atlas-II?",
+      "correct_answer": "340 m",
+      "source_documents": ["document_10.md"],
+      "section": "Section 2: Physical Specifications — table",
+      "difficulty": "easy",
+      "format": "table"
+    },
+    {
+      "id": "SDR-011",
+      "question": "What is the minimum operating temperature of the Atlas North?",
+      "correct_answer": "−65°C",
+      "source_documents": ["document_11.md"],
+      "section": "Section 3: Physical Specifications — table",
+      "difficulty": "medium",
+      "format": "table"
+    },
+    {
+      "id": "SDR-012",
+      "question": "Who is the Principal Investigator of Project TRITON?",
+      "correct_answer": "Dr. Sable Yurin",
+      "source_documents": ["document_12.md"],
+      "section": "Section 2: Project Details table",
+      "difficulty": "easy",
+      "format": "table",
+      "notes": "Potential confusion with Project SABLE; Sable Yurin ≠ Project SABLE"
+    },
+    {
+      "id": "SDR-013",
+      "question": "What calibration constant for the Peltex-200 is specified in the SUPERSEDED v1.0 specification?",
+      "correct_answer": "0.00447 W·m⁻²·sr⁻¹ per digital count",
+      "source_documents": ["document_13.md"],
+      "section": "Section 4.3: Calibration Constant (SUPERSEDED)",
+      "difficulty": "medium",
+      "format": "prose",
+      "notes": "Superseded document; correct value is 0.00391 in document_14.md"
+    },
+    {
+      "id": "SDR-014",
+      "question": "What is the corrected calibration constant for the Peltex-200 as given in the current v2.1 specification?",
+      "correct_answer": "0.00391 W·m⁻²·sr⁻¹ per digital count",
+      "source_documents": ["document_14.md"],
+      "section": "Section 4.3: Calibration Constant (CURRENT)",
+      "difficulty": "medium",
+      "format": "prose"
+    },
+    {
+      "id": "SDR-015",
+      "question": "What was the baseline temperature used for all EXP-441 thermal bias calculations?",
+      "correct_answer": "−47.3°C",
+      "source_documents": ["document_15.md"],
+      "section": "Appendix C: Baseline Temperature Record",
+      "difficulty": "hard",
+      "format": "appendix",
+      "notes": "Value buried in appendix; labeled as critical reference in Section 5.3 but actual value only in Appendix C"
+    },
+    {
+      "id": "SDR-016",
+      "question": "What is the elevation of Halvern Testing Ground?",
+      "correct_answer": "2,847 m AMSL",
+      "source_documents": ["document_16.md"],
+      "section": "Section 2: Location and Access — table, and Appendix A",
+      "difficulty": "medium",
+      "format": "table"
+    },
+    {
+      "id": "SDR-017",
+      "question": "What is the maximum altitude reached by Project AETHER balloon platforms?",
+      "correct_answer": "32,000 m AMSL",
+      "source_documents": ["document_17.md"],
+      "section": "Section 1 (program overview) and Section 2 Project Details table",
+      "difficulty": "easy",
+      "format": "prose and table"
+    },
+    {
+      "id": "SDR-018",
+      "question": "What is the aggregate noise floor of the Kryon-7X?",
+      "correct_answer": "3.11 × 10⁻⁹ V/√Hz",
+      "source_documents": ["document_18.md"],
+      "section": "Section 3.3: Noise Floor — table",
+      "difficulty": "hard",
+      "format": "table"
+    },
+    {
+      "id": "SDR-019",
+      "question": "How many active members does Team Crestfield have as of Charter Revision 6?",
+      "correct_answer": "8",
+      "source_documents": ["document_19.md"],
+      "section": "Section 2.1: Current Roster",
+      "difficulty": "easy",
+      "format": "prose and table"
+    },
+    {
+      "id": "SDR-020",
+      "question": "What is the length of the 'observation window' in the Duskline Protocol?",
+      "correct_answer": "72 hours",
+      "source_documents": ["document_20.md"],
+      "section": "Section 2: Definitions table, and Section 4",
+      "difficulty": "easy",
+      "format": "table and prose"
+    },
+    {
+      "id": "SDR-021",
+      "question": "What corrosion rate (in μm/year) did the standard VRC anodised aluminium coupon (C-01) exhibit in EXP-119?",
+      "correct_answer": "8.7 μm/year",
+      "source_documents": ["document_21.md"],
+      "section": "Section 5.1: Mass Loss Measurements — table",
+      "difficulty": "medium",
+      "format": "table"
+    },
+    {
+      "id": "SDR-022",
+      "question": "What astrometric precision target does Project SABLE specify?",
+      "correct_answer": "0.003 arcseconds",
+      "source_documents": ["document_22.md"],
+      "section": "Section 3.2: Astronomical Point-Source Photometry, and Appendix B",
+      "difficulty": "medium",
+      "format": "prose"
+    },
+    {
+      "id": "SDR-023",
+      "question": "What is the LVF element spacing of the Valdyne Spectral Array?",
+      "correct_answer": "14.77 mm",
+      "source_documents": ["document_23.md"],
+      "section": "Section 3.1: Linear Variable Filter, and Appendix C",
+      "difficulty": "hard",
+      "format": "prose with footnote"
+    },
+    {
+      "id": "SDR-024",
+      "question": "How many sensor modalities does Project NEXUS integrate?",
+      "correct_answer": "Six (6)",
+      "source_documents": ["document_24.md"],
+      "section": "Section 3: Sensor Suite",
+      "difficulty": "easy",
+      "format": "prose and table"
+    },
+    {
+      "id": "SDR-025",
+      "question": "What is the total 2023 research budget of the Veltrix Research Consortium?",
+      "correct_answer": "97.0M VRC-credits",
+      "source_documents": ["document_25.md"],
+      "section": "Section 2.3: Total 2023 Research Budget — table",
+      "difficulty": "easy",
+      "format": "table"
+    }
+  ],
+
+  "multi_document_retrieval": [
+    {
+      "id": "MDR-001",
+      "question": "Project NOVA uses a sensor system for its primary atmospheric measurements. What is that sensor system's aggregate noise floor?",
+      "correct_answer": "4.72 × 10⁻⁸ V/√Hz. Project NOVA (document_01.md) uses the Kryon-7 (SYS-KRY7-001) as its primary sensor. The Kryon-7 noise floor specification is given in document_02.md, Appendix B.",
+      "source_documents": ["document_01.md", "document_02.md"],
+      "reasoning_chain": "NOVA → Kryon-7 → noise floor spec",
+      "section": "Doc 01: Section 2 (Sensor Deployment); Doc 02: Appendix B",
+      "difficulty": "hard",
+      "format": "cross-document, appendix"
+    },
+    {
+      "id": "MDR-002",
+      "question": "What is the current maximum payload mass for the Atlas-X, and how does it compare to the payload used in EXP-441?",
+      "correct_answer": "The current Atlas-X maximum payload is 9.1 kg (Rev 4.x, from document_09.md). The EXP-441 total payload was 8.31 kg (document_15.md, Section 3), which is within both the old 8.4 kg limit and the current 9.1 kg limit.",
+      "source_documents": ["document_09.md", "document_15.md"],
+      "reasoning_chain": "Atlas-X payload limit → EXP-441 payload weight",
+      "section": "Doc 09: Section 4.3 (payload history); Doc 15: Section 3",
+      "difficulty": "medium",
+      "format": "table cross-reference"
+    },
+    {
+      "id": "MDR-003",
+      "question": "What facility does the Clearwater Protocol (current version) apply to, and who is the Commander of that facility?",
+      "correct_answer": "The current Clearwater Protocol v2.3 (document_06.md) applies to Oswick Station (FAC-OSW-001) and Halvern Testing Ground (FAC-HLV-002). Both facilities are commanded by Lt. Cmd. Bellamy Vorsch (document_03.md, document_06.md Appendix C, document_16.md).",
+      "source_documents": ["document_06.md", "document_03.md", "document_16.md"],
+      "reasoning_chain": "Clearwater Protocol → applicable facilities → facility commander",
+      "section": "Doc 06: Section 1 and Appendix C; Doc 03: header; Doc 16: header",
+      "difficulty": "medium",
+      "format": "prose and appendix"
+    },
+    {
+      "id": "MDR-004",
+      "question": "The Atlas North uses the Kryon-7X as its primary sensor. How much better is the Kryon-7X noise floor compared to the Kryon-7 it replaces?",
+      "correct_answer": "The Kryon-7X has a noise floor of 3.11 × 10⁻⁹ V/√Hz (document_18.md, Section 3.3), compared to 4.72 × 10⁻⁸ V/√Hz for the Kryon-7 (document_02.md, Appendix B). The improvement factor is approximately 15×, as stated in document_18.md.",
+      "source_documents": ["document_11.md", "document_18.md", "document_02.md"],
+      "reasoning_chain": "Atlas North → primary sensor = Kryon-7X → noise floor; compare with Kryon-7 noise floor",
+      "section": "Doc 11: Section 6; Doc 18: Section 3.3; Doc 02: Appendix B",
+      "difficulty": "hard",
+      "format": "three-hop cross-document"
+    },
+    {
+      "id": "MDR-005",
+      "question": "EXP-441 used an Atlas-X platform. What are the GPS-denied positioning drift characteristics of that platform?",
+      "correct_answer": "The Atlas-X (document_09.md) has a navigation accuracy of ±8.5 m/hour drift in INS-only GPS-denied mode. EXP-441 (document_15.md) used Atlas-X unit SYS-ATL-X002-S01.",
+      "source_documents": ["document_15.md", "document_09.md"],
+      "reasoning_chain": "EXP-441 → Atlas-X platform → navigation specs",
+      "section": "Doc 15: Section 3; Doc 09: Section 3 (Performance table)",
+      "difficulty": "medium",
+      "format": "two-hop"
+    },
+    {
+      "id": "MDR-006",
+      "question": "Project HELIOS uses the Peltex-200. What calibration constant should be applied to HELIOS data collected after 15 April 2022?",
+      "correct_answer": "0.00391 W·m⁻²·sr⁻¹ per digital count. After 15 April 2022, HELIOS uses the corrected constant from Peltex-200 v2.1 (document_14.md, Section 4.3). The previous constant of 0.00447 (document_13.md) is no longer operative. HELIOS data after this date is identified by the tag HELIOS-REPR-2022 (document_04.md, Appendix A).",
+      "source_documents": ["document_04.md", "document_14.md", "document_13.md"],
+      "reasoning_chain": "HELIOS → Peltex-200 → current calibration constant",
+      "section": "Doc 04: Appendix A; Doc 14: Section 4.3",
+      "difficulty": "hard",
+      "format": "superseded document awareness"
+    },
+    {
+      "id": "MDR-007",
+      "question": "What facility's ice operations must follow the Duskline Protocol for data quality, and what team is responsible for Duskline compliance for Project NOVA?",
+      "correct_answer": "Halvern Testing Ground's UAV operations (document_16.md, Section 5.1) are subject to the Duskline Protocol. For Project NOVA, the Duskline compliance officer is Dafydd Emlyn of Team Velanthor (document_20.md, Section 7).",
+      "source_documents": ["document_16.md", "document_20.md", "document_07.md"],
+      "reasoning_chain": "Duskline Protocol → NOVA compliance → officer name",
+      "section": "Doc 16: Section 5.1; Doc 20: Section 7; Doc 07: Section 3.4",
+      "difficulty": "medium",
+      "format": "two-hop with table"
+    },
+    {
+      "id": "MDR-008",
+      "question": "Project TRITON uses the Atlas-II. What is the Atlas-II's depth rating, and was this rating specifically designed to meet TRITON's requirements?",
+      "correct_answer": "The Atlas-II's depth rating is 340 m (document_10.md). Yes — document_10.md Appendix B explicitly states the 340 m depth rating was established to meet TRITON's secondary-site requirements (maximum exploratory depth 340 m, as stated in document_12.md).",
+      "source_documents": ["document_12.md", "document_10.md"],
+      "reasoning_chain": "TRITON → Atlas-II → depth rating design rationale",
+      "section": "Doc 12: Section 4; Doc 10: Section 2 and Appendix B",
+      "difficulty": "medium",
+      "format": "two-hop with appendix"
+    },
+    {
+      "id": "MDR-009",
+      "question": "What team issued the Kryon-7X specification, and where is that team's calibration laboratory located?",
+      "correct_answer": "Team Crestfield (document_19.md) issued the Kryon-7X specification (document_18.md). Team Crestfield's calibration laboratory is at Halvern Testing Ground, HLV-B03 (document_16.md, document_19.md, Section 4).",
+      "source_documents": ["document_18.md", "document_19.md", "document_16.md"],
+      "reasoning_chain": "Kryon-7X → issuing team (Crestfield) → calibration lab location",
+      "section": "Doc 18: header; Doc 19: Section 4; Doc 16: Infrastructure table",
+      "difficulty": "medium",
+      "format": "three-hop"
+    },
+    {
+      "id": "MDR-010",
+      "question": "EXP-119 studied corrosion of sensor housing materials. The standard housing material for the Kryon-7 is marine-grade anodised aluminium. Based on EXP-119 results, what is the estimated service life of a Kryon-7 housing at Oswick Station?",
+      "correct_answer": "Approximately 14.3 years. EXP-119 (document_21.md) found the standard marine-grade anodised aluminium (coupon C-01, same material as Kryon-7 housing per document_02.md and document_21.md Section 5.2) corrodes at 8.7 μm/year at Oswick conditions. The 14.3-year service life estimate is given in document_21.md footnote 1.",
+      "source_documents": ["document_21.md", "document_02.md"],
+      "reasoning_chain": "EXP-119 corrosion results → Kryon-7 housing material → service life",
+      "section": "Doc 21: Section 5.2, footnote 1; Doc 02: Section 2",
+      "difficulty": "hard",
+      "format": "cross-document with footnote"
+    },
+    {
+      "id": "MDR-011",
+      "question": "Project SABLE uses the Atlas North platform. Who is the designated field operator for Atlas North, and what program is he listed under?",
+      "correct_answer": "Vex Horodynski is the designated Atlas North field operations lead (document_11.md, Section 7.3, and document_22.md). He is listed in both the Atlas North specification (document_11.md) and the Project SABLE document (document_22.md).",
+      "source_documents": ["document_11.md", "document_22.md"],
+      "reasoning_chain": "SABLE → Atlas North → field operator",
+      "section": "Doc 11: Section 7.3; Doc 22: Section 4.1 and Personnel table",
+      "difficulty": "easy",
+      "format": "two-hop"
+    },
+    {
+      "id": "MDR-012",
+      "question": "What sensor does Project AETHER use on its balloon gondolas for atmospheric multi-spectral measurements, and what is its warm-up time from a cold start?",
+      "correct_answer": "Project AETHER (document_17.md) uses the Kryon-7 (SYS-KRY7-001) on balloon gondolas, specifically Bands 1–3 only. The Kryon-7 warm-up time from cold start is 8 minutes (document_02.md, Section 3.2).",
+      "source_documents": ["document_17.md", "document_02.md"],
+      "reasoning_chain": "AETHER balloon payload → sensor → warm-up spec",
+      "section": "Doc 17: Section 5.1 table; Doc 02: Section 3.2",
+      "difficulty": "medium",
+      "format": "two-hop"
+    },
+    {
+      "id": "MDR-013",
+      "question": "The Valdyne Spectral Array is used on the Atlas North for Project SABLE. What is the combined payload mass of the Kryon-7X and Valdyne Array on the Atlas North, and does it fall within the platform's payload limit?",
+      "correct_answer": "The combined Kryon-7X + Valdyne payload is 5.9 kg (document_11.md, Section 6). The Atlas North payload limit is 6.7 kg (document_11.md, Section 3). So yes, 5.9 kg is within the 6.7 kg limit.",
+      "source_documents": ["document_11.md", "document_18.md", "document_23.md"],
+      "reasoning_chain": "Atlas North → SABLE sensor suite → combined mass vs payload limit",
+      "section": "Doc 11: Section 6 and Section 3 table",
+      "difficulty": "medium",
+      "format": "numerical reasoning"
+    },
+    {
+      "id": "MDR-014",
+      "question": "What was the HELIOS orbital irradiance scaling parameter, and what document provides context for what this parameter represents?",
+      "correct_answer": "The HELIOS closest orbital reference epoch is 0.73 AU (document_04.md, Appendix B). Document 04 itself explains this is not Earth's actual solar distance but a characteristic of the VORCA orbital reference geometry.",
+      "source_documents": ["document_04.md"],
+      "reasoning_chain": "HELIOS → orbital reference → 0.73 AU parameter",
+      "section": "Doc 04: Appendix B",
+      "difficulty": "hard",
+      "format": "single document, appendix footnote"
+    },
+    {
+      "id": "MDR-015",
+      "question": "Which VRC programs contribute data to the multi-sensor fusion platform NEXUS, and which teams maintain the sensors used in NEXUS?",
+      "correct_answer": "NEXUS (document_24.md) integrates: Kryon-7X (Team Crestfield, document_19.md), Peltex-200 (Team Crestfield), and Valdyne Spectral Array (Team Crestfield). Sensors 4–6 are maintained by VRC Geophysics and VRC Instrumentation groups. Related programs sharing data with NEXUS include NOVA, HELIOS, SABLE, and AETHER (document_24.md, Appendix A).",
+      "source_documents": ["document_24.md", "document_19.md"],
+      "reasoning_chain": "NEXUS → sensor modalities → responsible teams",
+      "section": "Doc 24: Section 3 table, Appendix A; Doc 19: Section 3.2",
+      "difficulty": "medium",
+      "format": "multi-hop with table"
+    },
+    {
+      "id": "MDR-016",
+      "question": "Dr. Sable Yurin leads two VRC programs. What are they, and what do they share?",
+      "correct_answer": "Dr. Sable Yurin is PI of Project TRITON (VRC-SUB-3304, document_12.md) and Experiment EXP-119 (EXP-119-2022, document_21.md). They share water chemistry data through a formal data-sharing agreement (VRC-DSA-2022-TRITON-119), where TRITON CTD dives provide dissolved ion concentrations used in EXP-119's corrosion analysis.",
+      "source_documents": ["document_12.md", "document_21.md"],
+      "reasoning_chain": "Dr. Sable Yurin → programs she leads → shared data",
+      "section": "Doc 12: Appendix B; Doc 21: Section 1",
+      "difficulty": "medium",
+      "format": "two-hop"
+    },
+    {
+      "id": "MDR-017",
+      "question": "What data format do Project NOVA, Project AETHER, and Project HELIOS use, and where is the merged dataset archived?",
+      "correct_answer": "All three programs use VBIF v2 (VRC binary interchange format). The merged dataset is submitted to the VRC Integrated Atmosphere Archive (VIAA, archive code VRC-VIAA-001) on a quarterly basis (document_17.md, Appendix B).",
+      "source_documents": ["document_01.md", "document_04.md", "document_17.md"],
+      "reasoning_chain": "NOVA + HELIOS + AETHER → shared data format and archive",
+      "section": "Doc 01: Section 4; Doc 17: Appendix B",
+      "difficulty": "medium",
+      "format": "multi-document synthesis"
+    },
+    {
+      "id": "MDR-018",
+      "question": "What is the total mission duration of Project NOVA, and why was it set to that specific value?",
+      "correct_answer": "847 days (document_01.md, Section 2 table and Appendix A). It was set to ensure at least two full polar night cycles are captured in the Zone A dataset. This was an extension from the original 720-day duration, extended by the VRC Science Committee on 30 September 2022.",
+      "source_documents": ["document_01.md"],
+      "reasoning_chain": "NOVA mission duration → rationale (polar night cycles) → extension decision",
+      "section": "Doc 01: Project Details table and Appendix A footnote",
+      "difficulty": "hard",
+      "format": "single document, footnote"
+    },
+    {
+      "id": "MDR-019",
+      "question": "The Clearwater Protocol change from v1.0 to v2.3 altered the pressure threshold. What incident triggered this change, and at which facility did it occur?",
+      "correct_answer": "The Halvern Incident (VRC-INC-2022-HLV-08) in August 2022 (document_06.md, Section 1.3 table and Section 5.2). The incident occurred at Halvern Testing Ground and determined that the original 1.43 bar threshold (document_05.md) was over-conservative. The threshold was raised to 1.67 bar in v2.3.",
+      "source_documents": ["document_06.md", "document_05.md", "document_16.md"],
+      "reasoning_chain": "Clearwater v1.0→v2.3 change → triggering incident → location",
+      "section": "Doc 06: Section 1.3 and Section 5.2; Doc 05: Section 5.2",
+      "difficulty": "hard",
+      "format": "cross-version, two-document"
+    },
+    {
+      "id": "MDR-020",
+      "question": "EXP-441 was conducted at Halvern Testing Ground. What is the elevation of the test site, and what was the corridor used for test flights?",
+      "correct_answer": "Halvern Testing Ground is at 2,847 m AMSL (document_16.md, Section 2 table). The test flights used corridor HLV-CORRIDOR-01, a 3 km × 0.8 km zone (document_16.md, Section 3.2). EXP-441 specifically mentions '2,847 m AMSL' in document_15.md Section 4.1.",
+      "source_documents": ["document_15.md", "document_16.md"],
+      "reasoning_chain": "EXP-441 → facility → elevation and test corridor",
+      "section": "Doc 15: Section 4.1; Doc 16: Section 2 table and Section 3.2",
+      "difficulty": "medium",
+      "format": "two-hop"
+    },
+    {
+      "id": "MDR-021",
+      "question": "Which VRC programs are led by members of Team Velanthor?",
+      "correct_answer": "Team Velanthor (document_07.md) members lead: Project NOVA (Dr. Mara Fenwick, PI), Project HELIOS (Dr. Osias Prewitt, PI; Dr. Mara Fenwick, Deputy PI), and Project AETHER (Dr. Petra Olmstead, PI; Dr. Mara Fenwick, Deputy PI). Dr. Noel Hartbury (Team Velanthor member) led EXP-441.",
+      "source_documents": ["document_07.md", "document_01.md", "document_04.md", "document_17.md"],
+      "reasoning_chain": "Team Velanthor members → programs they lead",
+      "section": "Doc 07: Section 2.1 table; referenced in Docs 01, 04, 17",
+      "difficulty": "medium",
+      "format": "multi-document synthesis"
+    },
+    {
+      "id": "MDR-022",
+      "question": "What is the tare mass of the Atlas-X avionics sub-assembly, and in which document is this value hidden?",
+      "correct_answer": "3.871 kg. This is the tare mass of the Atlas-X avionics and structural sub-assembly, excluding propulsion, battery, and airframe skins. It is given in document_09.md, Section 2 table footnote 1, which is specifically labeled as a footnote to the Physical Specifications table.",
+      "source_documents": ["document_09.md"],
+      "reasoning_chain": "Atlas-X → tare mass → footnote in specifications table",
+      "section": "Doc 09: Section 2 table, footnote 1",
+      "difficulty": "hard",
+      "format": "footnote, single document"
+    },
+    {
+      "id": "MDR-023",
+      "question": "Project NEXUS includes the Peltex-200 as a sensor. Which serial number unit is used, and does it have the calibration error found in earlier units?",
+      "correct_answer": "The NEXUS Peltex-200 is unit PEL-200-0087 (document_24.md, Section 3.2). It was manufactured after January 2022 (serial > 0060), so it does not have the calibration error — it applies the corrected K_cal = 0.00391 from factory. This follows from document_14.md Appendix B, which states units PEL200-0061 and above use the correct constant.",
+      "source_documents": ["document_24.md", "document_14.md"],
+      "reasoning_chain": "NEXUS Peltex unit → serial number → affected range lookup",
+      "section": "Doc 24: Section 3.2; Doc 14: Appendix B",
+      "difficulty": "hard",
+      "format": "two-hop with table"
+    },
+    {
+      "id": "MDR-024",
+      "question": "What Atlas platform variant is used for Project SABLE, and what are the two sensors it carries?",
+      "correct_answer": "Project SABLE (document_22.md) uses the Atlas North (SYS-ATL-N004, document_11.md). It carries the Kryon-7X (SYS-KRY7X-002, document_18.md) and the Valdyne Spectral Array (SYS-VAL-004, document_23.md).",
+      "source_documents": ["document_22.md", "document_11.md", "document_18.md", "document_23.md"],
+      "reasoning_chain": "SABLE → Atlas North → sensor payload → two sensors",
+      "section": "Doc 22: Section 4.1; Doc 11: Section 6",
+      "difficulty": "easy",
+      "format": "three-hop"
+    },
+    {
+      "id": "MDR-025",
+      "question": "The VRC Annual Technical Review 2024 mentions that EXP-441 used −47.3°C as a baseline. In which document and section is this value defined, and what makes it significant?",
+      "correct_answer": "The −47.3°C value is defined in document_15.md, Appendix C ('Baseline Temperature Record'). It is significant because it was the most extreme ambient temperature recorded at Halvern in 22 years of operation (as stated in both document_15.md Appendix C footnote and document_25.md Section 5.4). All EXP-441 bias correction coefficients are normalised to this baseline.",
+      "source_documents": ["document_25.md", "document_15.md"],
+      "reasoning_chain": "Annual Review → EXP-441 baseline → specific document and section",
+      "section": "Doc 25: Section 5.4; Doc 15: Appendix C and footnote 1",
+      "difficulty": "hard",
+      "format": "two-hop, appendix"
+    }
+  ],
+
+  "ambiguity_challenge_questions": [
+    {
+      "id": "ACQ-001",
+      "question": "What is the pressure threshold for suspending water sampling operations?",
+      "correct_answer": "The CURRENT threshold is 1.67 bar, specified in Clearwater Protocol v2.3 (document_06.md, Section 5.2). The SUPERSEDED threshold of 1.43 bar appears in document_05.md but is no longer operative. Any answer citing 1.43 bar without noting it is superseded is incorrect.",
+      "source_documents": ["document_06.md", "document_05.md"],
+      "challenge_type": "conflicting/superseded information",
+      "notes": "Tests whether the system identifies the current vs. superseded document"
+    },
+    {
+      "id": "ACQ-002",
+      "question": "What is the Peltex-200 calibration constant?",
+      "correct_answer": "The current calibration constant is K_cal = 0.00391 W·m⁻²·sr⁻¹ per digital count (document_14.md). The value 0.00447 is the erroneous superseded value from document_13.md and must not be used. A correct answer must cite document_14.md and the corrected value.",
+      "source_documents": ["document_14.md", "document_13.md"],
+      "challenge_type": "conflicting/superseded information",
+      "notes": "Tests superseded document handling; 0.00447 is the 'trap' answer"
+    },
+    {
+      "id": "ACQ-003",
+      "question": "Who leads Project SABLE?",
+      "correct_answer": "Dr. Aldous Quirk leads Project SABLE (VRC-OPT-5512, document_22.md). Note: Dr. Sable Yurin is a different person who leads Project TRITON (document_12.md) and EXP-119. The name 'Sable' appears in both a project name (SABLE) and a person (Dr. Sable Yurin) but they are unrelated.",
+      "source_documents": ["document_22.md", "document_12.md"],
+      "challenge_type": "similarly named entities — name/project confusion",
+      "notes": "Tests precision: 'Sable Yurin' ≠ 'Project SABLE'"
+    },
+    {
+      "id": "ACQ-004",
+      "question": "What is the maximum payload of the Atlas-X?",
+      "correct_answer": "The current maximum payload of the Atlas-X is 9.1 kg (Rev 4.x, document_09.md Section 4.3). Earlier revisions specified 8.0 kg (Rev 1.x) and 8.4 kg (Rev 2.x–3.x). The answer depends on which revision is in effect; the current revision since January 2023 is Rev 4.x with 9.1 kg.",
+      "source_documents": ["document_09.md"],
+      "challenge_type": "version-dependent answer",
+      "notes": "EXP-441 planning used 8.4 kg (old spec); current is 9.1 kg"
+    },
+    {
+      "id": "ACQ-005",
+      "question": "What is the Atlas platform's maximum operating altitude?",
+      "correct_answer": "It depends on the variant: Atlas baseline = 4,500 m AMSL; Atlas-X = 8,200 m AMSL; Atlas-II = not applicable (subsurface, max depth 340 m); Atlas North = 4,500 m AMSL. The answer requires specifying the variant (documents 08–11).",
+      "source_documents": ["document_08.md", "document_09.md", "document_10.md", "document_11.md"],
+      "challenge_type": "similarly named entities requiring disambiguation",
+      "notes": "Atlas family has four variants with different capabilities"
+    },
+    {
+      "id": "ACQ-006",
+      "question": "What is the Atlas depth rating?",
+      "correct_answer": "The Atlas-II (SYS-ATL-II003) is rated to 340 m depth (document_10.md). The other Atlas variants (Atlas, Atlas-X, Atlas North) are aerial platforms and have no depth rating; they operate at altitude. The question is ambiguous — it requires the reader to identify 'Atlas' as referring to Atlas-II for a depth context.",
+      "source_documents": ["document_10.md", "document_08.md"],
+      "challenge_type": "atlas family disambiguation",
+      "notes": "Only Atlas-II has a depth rating; aerial Atlas variants do not"
+    },
+    {
+      "id": "ACQ-007",
+      "question": "When was the Clearwater Protocol issued?",
+      "correct_answer": "There are two versions: Clearwater Protocol v1.0 (PROT-CLW-001, document_05.md) was issued 22 June 2020. Clearwater Protocol v2.3 (PROT-CLW-002, document_06.md, the CURRENT version) was issued 18 November 2022 (v2.0) and last revised 14 March 2023 (v2.3). A complete answer must acknowledge both versions.",
+      "source_documents": ["document_05.md", "document_06.md"],
+      "challenge_type": "version disambiguation",
+      "notes": "Two versions exist; question is ambiguous without specifying which"
+    },
+    {
+      "id": "ACQ-008",
+      "question": "What noise floor specification is relevant to NOVA's polar night operations?",
+      "correct_answer": "4.72 × 10⁻⁸ V/√Hz — the Kryon-7 aggregate noise floor (document_02.md, Appendix B). This value is mentioned explicitly in document_01.md (Appendix A) as the context for attenuation correction factors during polar night, and the full specification is in document_02.md. Note: the Kryon-7X has a better noise floor (3.11 × 10⁻⁹ V/√Hz) but is not used in NOVA Zone A/B fixed nodes.",
+      "source_documents": ["document_01.md", "document_02.md"],
+      "challenge_type": "multi-hop with potential Kryon-7 vs 7X confusion",
+      "notes": "Must identify Kryon-7 (not 7X) is the NOVA Zone A sensor"
+    },
+    {
+      "id": "ACQ-009",
+      "question": "What is the Duskline observation window for NOVA anomalies near the twilight threshold?",
+      "correct_answer": "The standard Duskline Protocol observation window is 72 hours (document_20.md). However, for NOVA specifically, data collected within 30 minutes of the −6° solar elevation threshold is pre-assigned the QF-SUSPECT flag rather than triggering a full Duskline watch (document_20.md, Appendix A). This pre-filter bypasses the 72-hour watch for twilight-zone data pending manual review.",
+      "source_documents": ["document_20.md", "document_01.md"],
+      "challenge_type": "general rule vs. program-specific exception",
+      "notes": "Tests awareness of NOVA-specific Appendix A exception to the standard 72-hour rule"
+    },
+    {
+      "id": "ACQ-010",
+      "question": "What temperature did the Atlas North qualify to in environmental testing?",
+      "correct_answer": "The Atlas North's minimum operating temperature specification is −65°C (document_11.md, Section 3). Testing was conducted to −70°C, but at −70°C the avionics heater was insufficient and the unit did not fully meet specification. The −65°C value represents the qualified operational limit (document_11.md, Appendix A table and footnote 1).",
+      "source_documents": ["document_11.md"],
+      "challenge_type": "specification vs. test limit vs. failure point",
+      "notes": "Tested to −70°C but only qualified to −65°C; appendix footnote clarifies this"
+    },
+    {
+      "id": "ACQ-011",
+      "question": "Which Kryon sensor should be calibrated using procedure VRC-CAL-PROC-KRY7X-001?",
+      "correct_answer": "The Kryon-7X (document_18.md, Section 6). This procedure is specific to the Kryon-7X and must not be used for the Kryon-7 (which uses VRC-CAL-PROC-KRY7-001, document_02.md, Section 6). Document_02.md explicitly warns: 'The Kryon-7X variant uses a different calibration procedure.'",
+      "source_documents": ["document_18.md", "document_02.md"],
+      "challenge_type": "similar procedure codes — precision required",
+      "notes": "KRY7X-001 ≠ KRY7-001; tests precision of naming"
+    },
+    {
+      "id": "ACQ-012",
+      "question": "How many sensor nodes does Project NOVA operate?",
+      "correct_answer": "14 active sensor nodes (document_01.md, Section 2 — 'NOVA currently operates 14 active sensor nodes'). These are distributed: 6 in Zone A, 5 in Zone B, 3 in Zone C.",
+      "source_documents": ["document_01.md"],
+      "challenge_type": "straightforward but tests exact value retrieval",
+      "notes": "Also stated in document_07.md (Team Velanthor equipment table)"
+    },
+    {
+      "id": "ACQ-013",
+      "question": "What is the Clearwater Protocol safety pressure threshold for the Halvern ice facility?",
+      "correct_answer": "1.67 bar (current Clearwater Protocol v2.3, document_06.md, Section 5.2). The Halvern ice facility operations comply with Clearwater Protocol v2.3 (document_16.md, Section 5.2 explicitly states this). The old threshold of 1.43 bar (document_05.md) is superseded.",
+      "source_documents": ["document_06.md", "document_16.md"],
+      "challenge_type": "multi-document + superseded version check",
+      "notes": "Halvern-specific question; must trace Halvern → Clearwater → current threshold"
+    },
+    {
+      "id": "ACQ-014",
+      "question": "Who is the station commander at both Oswick and Halvern simultaneously?",
+      "correct_answer": "Lt. Cmd. Bellamy Vorsch holds concurrent command of Oswick Station (document_03.md) and Halvern Testing Ground (document_16.md) since March 2023. This is explicitly stated in document_06.md Appendix C footnote: 'Lt. Cmd. Bellamy Vorsch holds the station commander role at both Oswick (primary) and Halvern (concurrent appointment since March 2023).'",
+      "source_documents": ["document_06.md", "document_03.md", "document_16.md"],
+      "challenge_type": "fact hidden in appendix footnote, requires cross-document confirmation",
+      "notes": "Unusual fact — one person commands two facilities"
+    },
+    {
+      "id": "ACQ-015",
+      "question": "What firmware version are NOVA sensor nodes running?",
+      "correct_answer": "Firmware v4.3.1 (Kryon-7 firmware track). All NOVA Kryon-7 deployments were updated to v4.3.1 by 01 June 2023 (document_02.md, Section 5). NOVA uses Kryon-7 sensors (document_01.md), which run firmware from the KRY7-FW track, not the Atlas firmware track.",
+      "source_documents": ["document_01.md", "document_02.md"],
+      "challenge_type": "two-hop: NOVA → Kryon-7 → firmware version",
+      "notes": "Easy to confuse with Atlas firmware (ATL-FW-v7.1.2)"
+    },
+    {
+      "id": "ACQ-016",
+      "question": "What is the LVF element spacing versus the pixel pitch of the Valdyne Spectral Array?",
+      "correct_answer": "The LVF element spacing is 14.77 mm (document_23.md, Section 3.1 and Appendix C). The pixel pitch is 5.5 μm (document_23.md, Section 2). These are very different parameters: element spacing governs spectral sampling across channels, while pixel pitch governs spatial resolution within a channel. The question tests whether the system can distinguish between two easily confused numerical values in the same document.",
+      "source_documents": ["document_23.md"],
+      "challenge_type": "numerical precision — two different metrics in same document",
+      "notes": "14.77 mm vs 5.5 μm — must correctly identify which is which"
+    },
+    {
+      "id": "ACQ-017",
+      "question": "Is Dr. Sable Yurin affiliated with Project SABLE?",
+      "correct_answer": "No. Dr. Sable Yurin is the PI of Project TRITON (VRC-SUB-3304, document_12.md) and EXP-119 (document_21.md). Project SABLE (VRC-OPT-5512, document_22.md) is led by Dr. Aldous Quirk and has no connection to Dr. Yurin. Document_22.md Section 1 includes an explicit disambiguation notice on this point.",
+      "source_documents": ["document_12.md", "document_21.md", "document_22.md"],
+      "challenge_type": "name/project disambiguation",
+      "notes": "High hallucination risk — obvious but wrong association"
+    },
+    {
+      "id": "ACQ-018",
+      "question": "What is the calibration checksum for the Kryon-7X, and is it the same as the Atlas-X firmware checksum?",
+      "correct_answer": "The Kryon-7X calibration checksum is 9E3A (CRC-16, document_18.md, Appendix B). The Atlas-X firmware CRC-32 integrity code is A3F7C901 (document_09.md, Section 6). They are completely different — different instruments, different checksum types (CRC-16 vs CRC-32), and different purposes.",
+      "source_documents": ["document_18.md", "document_09.md"],
+      "challenge_type": "similar entities — two checksums for two different systems",
+      "notes": "Tests precision: 9E3A (Kryon-7X calibration CRC-16) ≠ A3F7C901 (Atlas-X firmware CRC-32)"
+    },
+    {
+      "id": "ACQ-019",
+      "question": "What is the NEXUS total budget, and how does it compare to Project NOVA's budget?",
+      "correct_answer": "NEXUS total budget (Phase 1+2) is 22.1M VRC-credits (document_24.md, Appendix B). Project NOVA's budget is 12.4M VRC-credits (document_01.md, Project Details table). NEXUS is approximately 1.79× larger than NOVA. Document_24.md footnote 1 notes NEXUS exceeds the combined budgets of NOVA, HELIOS, and AETHER, making it the largest single VRC program in history.",
+      "source_documents": ["document_24.md", "document_01.md"],
+      "challenge_type": "numerical comparison across documents",
+      "notes": "Requires NOVA budget from document_01.md table"
+    },
+    {
+      "id": "ACQ-020",
+      "question": "When should HELIOS data collected before March 2022 be used for quantitative analysis?",
+      "correct_answer": "Only if reprocessed with the corrected calibration constant (K_cal = 0.00391). Untagged HELIOS data files prior to 15 April 2022 use the obsolete K_cal = 0.00447 and 'must not be used for quantitative analysis without reprocessing' (document_14.md, Section 4.1 warning note; also document_04.md, Appendix A). The reprocessed dataset is tagged HELIOS-REPR-2022.",
+      "source_documents": ["document_04.md", "document_14.md"],
+      "challenge_type": "data validity condition — when not to use data",
+      "notes": "Tests understanding of the reprocessing caveat"
+    },
+    {
+      "id": "ACQ-021",
+      "question": "What happened to the Clearwater Protocol pressure threshold at 1.43 bar? Should field personnel still observe it?",
+      "correct_answer": "No. The 1.43 bar threshold was superseded by 1.67 bar in Clearwater Protocol v2.3 (document_06.md), which is the current operative protocol. The 1.43 bar value appears only in the archived v1.0 (document_05.md), which carries a clear SUPERSEDED notice. All active operations must use document_06.md.",
+      "source_documents": ["document_05.md", "document_06.md"],
+      "challenge_type": "active vs. superseded protocol",
+      "notes": "Direct hallucination resistance test"
+    },
+    {
+      "id": "ACQ-022",
+      "question": "The Atlas North and Atlas-X look physically similar. What is the key performance difference between them for polar operations?",
+      "correct_answer": "Atlas North has a minimum operating temperature of −65°C (document_11.md), versus −30°C for Atlas-X (document_09.md/document_11.md comparison table). Atlas North also has a lower maximum payload (6.7 kg vs. 9.1 kg) due to thermal management system mass penalty. The Atlas North is the only variant cold-qualified for polar night operations at the VRC's northern sites.",
+      "source_documents": ["document_09.md", "document_11.md"],
+      "challenge_type": "distinguishing similar entities",
+      "notes": "Tests Atlas-X vs Atlas North comparison"
+    },
+    {
+      "id": "ACQ-023",
+      "question": "What is the VRC Automated Quality Control System hostname, and where is it hosted?",
+      "correct_answer": "The VAQCS (VRC Automated Quality Control System) is hosted at Halvern VDPC (document_20.md, Section 3.1). No hostname is given for VAQCS itself; however, the VBIF data logging server at Oswick is 'osw-dlog-01' (document_03.md, Section 6). The question tests whether a system correctly distinguishes VAQCS (no hostname given) from the Oswick data logger (hostname given).",
+      "source_documents": ["document_20.md", "document_03.md"],
+      "challenge_type": "partial information — some details given, some not",
+      "notes": "VAQCS hostname is not in the corpus; Oswick logger hostname is"
+    },
+    {
+      "id": "ACQ-024",
+      "question": "How many VRC programs has Prof. Tarquin Selvidge overseen grow from 4 to 11, and over what time period?",
+      "correct_answer": "Document_25.md Section 1 states Prof. Selvidge has been Director of Research since 2017 and the portfolio grew from 4 to 11 active programs under his direction. The document was issued in 2024, implying a period from 2017 to 2024. No more precise dates are given in the corpus.",
+      "source_documents": ["document_25.md"],
+      "challenge_type": "approximate answer from incomplete data",
+      "notes": "Tests reading comprehension with imprecise dates"
+    },
+    {
+      "id": "ACQ-025",
+      "question": "Does the Duskline Protocol apply to Project SABLE, given that SABLE operates exclusively during polar night and never encounters the 'dusk line' phenomenon?",
+      "correct_answer": "Yes. The Duskline Protocol (document_20.md, Appendix B) explicitly states that SABLE is 'subject to the standard Duskline Protocol for all other anomaly categories' even though the twilight pre-filter is waived. The protocol's application scope is broader than just the dusk-line phenomenon; it governs all data anomaly types. The twilight pre-filter (which is NOVA-specific) does not apply to SABLE.",
+      "source_documents": ["document_20.md", "document_22.md"],
+      "challenge_type": "scope of applicability — exception within a rule",
+      "notes": "Tests careful reading of Appendix B exception handling"
+    }
+  ],
+
+  "not_found_in_corpus": [
+    {
+      "id": "NFC-001",
+      "question": "What is Dr. Mara Fenwick's date of birth?",
+      "correct_answer": "Not found in corpus. No personal biographical information such as dates of birth is included in any VRC document.",
+      "notes": "Personal details not included in technical corpus"
+    },
+    {
+      "id": "NFC-002",
+      "question": "What is the price per unit of the Kryon-7 sensor?",
+      "correct_answer": "Not found in corpus. No pricing or procurement cost information appears in any VRC document. Only budget allocations at the program level are mentioned.",
+      "notes": "Commercial pricing is not in the technical specification documents"
+    },
+    {
+      "id": "NFC-003",
+      "question": "What is the telephone number of Oswick Station?",
+      "correct_answer": "Not found in corpus. Document_03.md provides radio frequencies and internal VRC extension numbers, but no external telephone number.",
+      "notes": "Radio freq (156.8 MHz) and internal ext (7-700) are present; no phone number"
+    },
+    {
+      "id": "NFC-004",
+      "question": "What country is Oswick Station located in?",
+      "correct_answer": "Not found in corpus. The documents provide coordinates (74°23'19.4\"N, 20°07'44.8\"E — which would be in the Svalbard/Norwegian Arctic region in the real world) but no country name is given. The nearest settlement Halvdal is mentioned without a country. The corpus is a fictional organization and does not name any real country.",
+      "notes": "Coordinates are provided but no country is named"
+    },
+    {
+      "id": "NFC-005",
+      "question": "What operating system does the NEXUS Data Integration Node server run?",
+      "correct_answer": "Not found in corpus. Document_24.md mentions the NDIN server hardware code (VRC-NDIN-HW-001) but provides no information about software or operating systems.",
+      "notes": "Hardware code present; OS not mentioned"
+    },
+    {
+      "id": "NFC-006",
+      "question": "What is the name of the Halvern Testing Ground's canteen or cafeteria supplier?",
+      "correct_answer": "Not found in corpus. No such information exists in any VRC document.",
+      "notes": "Mundane facility detail not in corpus"
+    },
+    {
+      "id": "NFC-007",
+      "question": "What is the Veltrix Research Consortium's founding year?",
+      "correct_answer": "Not found in corpus. Document_03.md states Oswick Station was 'established in 1997' but the founding year of the VRC itself is not stated anywhere in the corpus.",
+      "notes": "Station founding year given (1997) but not VRC founding year"
+    },
+    {
+      "id": "NFC-008",
+      "question": "How many staff does Lt. Cmd. Bellamy Vorsch manage at Oswick Station?",
+      "correct_answer": "Not found in corpus. The station capacity is 24 beds (document_03.md) and various program staff are listed, but no total headcount or organisational structure below the commander level is given.",
+      "notes": "Bed capacity (24) is present but not headcount under commander"
+    },
+    {
+      "id": "NFC-009",
+      "question": "What is the weight of the Atlas North battery pack?",
+      "correct_answer": "Not found in corpus. Document_11.md describes the thermal management mass penalty (~2.6 kg for battery heater, avionics heater, and insulation combined) but does not give the battery pack's own mass separately.",
+      "notes": "Thermal penalty mass given but not battery mass alone"
+    },
+    {
+      "id": "NFC-010",
+      "question": "What is the VRC's policy on publication embargoes?",
+      "correct_answer": "Not found in corpus. Document_19.md states instrument specifications are internal and not publicly released without approval, but no general publication embargo policy is described.",
+      "notes": "IP/publication restrictions mentioned briefly but no formal policy"
+    },
+    {
+      "id": "NFC-011",
+      "question": "What manufacturer supplies the balloons used in Project AETHER?",
+      "correct_answer": "Not found in corpus. Document_17.md mentions stratospheric balloons 'supplied under VRC procurement contract VRC-PROC-AETHER-2021' but does not name the balloon manufacturer.",
+      "notes": "Procurement contract code is given but supplier name is not"
+    },
+    {
+      "id": "NFC-012",
+      "question": "What is the salary of a VRC Research Associate?",
+      "correct_answer": "Not found in corpus. No salary, pay grade, or compensation information appears in any VRC document.",
+      "notes": "Compensation information is not in the corpus"
+    },
+    {
+      "id": "NFC-013",
+      "question": "What programming language is the NEXUS fusion algorithm engine written in?",
+      "correct_answer": "Not found in corpus. Document_24.md mentions the fusion algorithm engine (VRC-NEXUS-FUSION-v1) is 'under development' but no implementation language is specified.",
+      "notes": "Software development mentioned but no language specified"
+    },
+    {
+      "id": "NFC-014",
+      "question": "What is the battery capacity (in Wh) of the Atlas North?",
+      "correct_answer": "Not found in corpus. Document_11.md provides endurance data and power consumption for the thermal management system but does not state the raw battery capacity in Wh.",
+      "notes": "Power consumption and endurance are given; Wh capacity is not"
+    },
+    {
+      "id": "NFC-015",
+      "question": "What is the URL for the VRC Open Data Repository?",
+      "correct_answer": "Not found in corpus. Document_04.md mentions the VRC Open Data Repository (repository ID: VRC-ODR-HELIOS) but provides no URL.",
+      "notes": "Repository ID given but no URL"
+    },
+    {
+      "id": "NFC-016",
+      "question": "What is Prof. Tarquin Selvidge's nationality?",
+      "correct_answer": "Not found in corpus. No nationality or biographical information is provided for any VRC personnel.",
+      "notes": "Standard biographical detail not in corpus"
+    },
+    {
+      "id": "NFC-017",
+      "question": "What is the spectral resolution of the Kryon-7X in Band 5?",
+      "correct_answer": "Not found in corpus. Document_18.md provides band wavelength ranges and sampling rates, but spectral resolution per band is not specified (unlike the Valdyne Array, for which spectral resolution is given in document_23.md).",
+      "notes": "Spectral resolution is not given for Kryon-7X; it is given for Valdyne"
+    },
+    {
+      "id": "NFC-018",
+      "question": "What is the failure rate of the Kryon-7 in field deployments?",
+      "correct_answer": "Not found in corpus. No reliability statistics, MTBF, or failure rate data are given for any sensor in the corpus.",
+      "notes": "Reliability data not in corpus"
+    },
+    {
+      "id": "NFC-019",
+      "question": "Has Project TRITON published any peer-reviewed papers?",
+      "correct_answer": "Not found in corpus. No publication records, journal papers, or conference proceedings are referenced in the TRITON or any other VRC project document.",
+      "notes": "Publication records not in corpus"
+    },
+    {
+      "id": "NFC-020",
+      "question": "What is the model number of the GPS receiver used in the Atlas baseline platform?",
+      "correct_answer": "Not found in corpus. Document_08.md states the Atlas uses 'Dual-constellation (GPS + GLONASS), RTK-capable' GNSS but does not name the model or manufacturer of the receiver.",
+      "notes": "Type of receiver is described but model number is not given"
+    },
+    {
+      "id": "NFC-021",
+      "question": "What is the Kryon-7's field of view angle?",
+      "correct_answer": "Not found in corpus. Document_02.md provides extensive Kryon-7 specifications but does not include a field of view specification. (The Valdyne Array does specify a 12° × 4° FOV in document_23.md.)",
+      "notes": "FOV not given for Kryon-7; given for Valdyne Array"
+    },
+    {
+      "id": "NFC-022",
+      "question": "What is the name of the VRC legal department contact for patent questions?",
+      "correct_answer": "Not found in corpus. No legal department or patent-related contact information is included in any VRC document.",
+      "notes": "Legal/IP department contacts not in corpus"
+    },
+    {
+      "id": "NFC-023",
+      "question": "Did any NOVA sensor node experience a complete failure during 2023?",
+      "correct_answer": "Not found in corpus. Document_01.md describes known limitations (signal attenuation and wind artefacts) but no sensor failures are reported. The VRC Annual Review 2024 (document_25.md) notes NOVA completed its first full polar night cycle but does not report node failures.",
+      "notes": "Limitations described but complete failure events not documented"
+    },
+    {
+      "id": "NFC-024",
+      "question": "What is the reorder code for the Kryon-7 desiccant cartridge?",
+      "correct_answer": "Not found in corpus. Document_13.md/14.md mention the Peltex-200 uses desiccant cartridge VRC-DESI-PEL-01, but no desiccant part code is specified for the Kryon-7 in document_02.md.",
+      "notes": "Peltex-200 desiccant code exists (VRC-DESI-PEL-01); Kryon-7 desiccant code is not given"
+    },
+    {
+      "id": "NFC-025",
+      "question": "What is the boiling point of the chemical reagents stored at Oswick Station?",
+      "correct_answer": "Not found in corpus. Document_03.md states that laboratory chemicals are stored per VRC Hazmat Code VHC-007 and an inventory exists (OSLAB-INV-LIVE), but no specific reagents or their properties are listed in the document.",
+      "notes": "Chemical storage rules referenced; specific chemicals and properties not listed"
+    }
+  ]
+}
