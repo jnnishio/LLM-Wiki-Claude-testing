@@ -1,0 +1,26 @@
+For each of the following questions, find the answer and cite the raw source(s) from the current working directory. Put those as columns in a csv called "my_answers.xlsx". You can use unicode characters for answers. Do nothing else. Note that you do not have the raw sources available to you; answer based on the wiki only and cite the raw sources in the wiki frontmatter. 
+What is the project code for Project NOVA?
+  What is the aggregate voltage-referred noise floor of the Kryon-7 (Rev 3.2) across the full spectral range?
+  What is the latitude of Oswick Station?
+  Who is the Principal Investigator of Project HELIOS?
+  What sub-ice pressure threshold is specified in the SUPERSEDED Clearwater Protocol (v1.0) for suspending sampling?
+  What sub-ice pressure threshold is specified in the CURRENT Clearwater Protocol (v2.3) for suspending sampling?
+  How many active members does Team Velanthor have as of Charter Revision 4?
+  What is the empty mass of the Atlas baseline platform?
+  What is the CRC-32 integrity code for the Atlas-X Rev 4.1 firmware image?
+  What is the maximum operating depth of the Atlas-II?
+  What is the minimum operating temperature of the Atlas North?
+  Who is the Principal Investigator of Project TRITON?
+  What calibration constant for the Peltex-200 is specified in the SUPERSEDED v1.0 specification?
+  What is the corrected calibration constant for the Peltex-200 as given in the current v2.1 specification?
+  What was the baseline temperature used for all EXP-441 thermal bias calculations?
+  What is the elevation of Halvern Testing Ground?
+  What is the maximum altitude reached by Project AETHER balloon platforms?
+  What is the aggregate noise floor of the Kryon-7X?
+  How many active members does Team Crestfield have as of Charter Revision 6?
+  What is the length of the 'observation window' in the Duskline Protocol?
+  What corrosion rate (in μm/year) did the standard VRC anodised aluminium coupon (C-01) exhibit in EXP-119?
+  What astrometric precision target does Project SABLE specify?
+  What is the LVF element spacing of the Valdyne Spectral Array?
+  How many sensor modalities does Project NEXUS integrate?
+  What is the total 2023 research budget of the Veltrix Research Consortium?

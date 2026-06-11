@@ -1,0 +1,22 @@
+For each of the following questions, find the answer and cite ALL applicable sources from the current working directory. Sources are citable if the answer(s) to the question(s) are inside it.  In each answer, put in parentheses the raw source name and the llm wiki document that you found it from behind each cited important detail in the answer. Put those as columns in a csv called "my_answers_3-4.xlsx". Ensure the xlsx can be opened by me later. You can use unicode characters for answers. Do nothing else. Note that you do not have the raw sources available to you; answer based on the wiki only and cite the raw sources from the wiki frontmatter. You should not need the "wiki/raw" folder.
+
+What is the pressure threshold for suspending water sampling operations?
+What is the Peltex-200 calibration constant?
+Who leads Project SABLE?
+What is the maximum payload of the Atlas-X?
+What is the Atlas platform's maximum operating altitude?
+What is the Atlas depth rating?
+When was the Clearwater Protocol issued?
+What noise floor specification is relevant to NOVA's polar night operations?
+What is the Duskline observation window for NOVA anomalies near the twilight threshold?
+What temperature did the Atlas North qualify to in environmental testing?
+What is Dr. Mara Fenwick's date of birth?
+What is the price per unit of the Kryon-7 sensor?
+What is the telephone number of Oswick Station?
+What country is Oswick Station located in?
+What operating system does the NEXUS Data Integration Node server run?
+What is the name of the Halvern Testing Ground's canteen or cafeteria supplier?
+What is the Veltrix Research Consortium's founding year?
+How many staff does Lt. Cmd. Bellamy Vorsch manage at Oswick Station?
+What is the weight of the Atlas North battery pack?
+What is the VRC's policy on publication embargoes?

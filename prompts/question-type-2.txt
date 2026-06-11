@@ -1,0 +1,27 @@
+For each of the following questions, find the answer and cite ALL applicable sources from the current working directory. Sources are citable if the answer(s) to the question(s) are inside it.  In each answer, put in parentheses the raw source name and the llm wiki document that you found it from behind each cited important detail in the answer. Put those as columns in a csv called "my_answers_2_explicit_sources-wiki.xlsx". Ensure the xlsx can be opened by me later. You can use unicode characters for answers. Do nothing else. Note that you do not have the raw sources available to you; answer based on the wiki only and cite the raw sources from the wiki frontmatter. You should not need the "wiki/raw" folder.
+ 
+ Project NOVA uses a sensor system for its primary atmospheric measurements. What is that sensor system's aggregate noise floor?
+  What is the current maximum payload mass for the Atlas-X, and how does it compare to the payload used in EXP-441?
+  What facility does the Clearwater Protocol (current version) apply to, and who is the Commander of that facility?
+  The Atlas North uses the Kryon-7X as its primary sensor. How much better is the Kryon-7X noise floor compared to the Kryon-7 it replaces?
+  EXP-441 used an Atlas-X platform. What are the GPS-denied positioning drift characteristics of that platform?
+  Project HELIOS uses the Peltex-200. What calibration constant should be applied to HELIOS data collected after 15 April 2022?
+  What facility's ice operations must follow the Duskline Protocol for data quality, and what team is responsible for Duskline compliance for Project NOVA?
+  Project TRITON uses the Atlas-II. What is the Atlas-II's depth rating, and was this rating specifically designed to meet TRITON's requirements?
+  What team issued the Kryon-7X specification, and where is that team's calibration laboratory located?
+  EXP-119 studied corrosion of sensor housing materials. The standard housing material for the Kryon-7 is marine-grade anodised aluminium. Based on EXP-119 results, what is the estimated service life of a Kryon-7 housing at Oswick Station?
+  Project SABLE uses the Atlas North platform. Who is the designated field operator for Atlas North, and what program is he listed under?
+  What sensor does Project AETHER use on its balloon gondolas for atmospheric multi-spectral measurements, and what is its warm-up time from a cold start?
+  The Valdyne Spectral Array is used on the Atlas North for Project SABLE. What is the combined payload mass of the Kryon-7X and Valdyne Array on the Atlas North, and does it fall within the platform's payload limit?
+  What was the HELIOS orbital irradiance scaling parameter, and what document provides context for what this parameter represents?
+  Which VRC programs contribute data to the multi-sensor fusion platform NEXUS, and which teams maintain the sensors used in NEXUS?
+  Dr. Sable Yurin leads two VRC programs. What are they, and what do they share?
+  What data format do Project NOVA, Project AETHER, and Project HELIOS use, and where is the merged dataset archived?
+  What is the total mission duration of Project NOVA, and why was it set to that specific value?
+  The Clearwater Protocol change from v1.0 to v2.3 altered the pressure threshold. What incident triggered this change, and at which facility did it occur?
+  EXP-441 was conducted at Halvern Testing Ground. What is the elevation of the test site, and what was the corridor used for test flights?
+  Which VRC programs are led by members of Team Velanthor?
+  What is the tare mass of the Atlas-X avionics sub-assembly, and in which document is this value hidden?
+  Project NEXUS includes the Peltex-200 as a sensor. Which serial number unit is used, and does it have the calibration error found in earlier units?
+  What Atlas platform variant is used for Project SABLE, and what are the two sensors it carries?
+  The VRC Annual Technical Review 2024 mentions that EXP-441 used −47.3°C as a baseline. In which document and section is this value defined, and what makes it significant?
