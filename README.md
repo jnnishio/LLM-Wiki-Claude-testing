@@ -10,18 +10,18 @@ This is a proof of concept (PoC) for the Hermes LLM Wiki skill, tested using Cla
 - `test-results/` : Claude's answers to each question type:
     - **1: requires retrieving information from single documents**
     (easiest)
-        - `test-results/my_answers_1.xlsx`: Claude's answers to question type 1
+        - [test-results/my_answers_1.xlsx](test-results/my_answers_1.xlsx): Claude's answers to question type 1
     - **2: requires retrieving information from multiple documents**
-        - `test-results/my_answers_2_explicit_sources-wiki.xlsx`: Claude's answers to question type 2, but prompted to explicitly mention raw sources and wiki documents cited (FINAL BEST VERSION)
-        - `test-results/my_answers_2_onesource.xlsx`: Claude's answers to question type 2, but I didn't explicitly tell it to cite "ALL applicable sources". Here, Claude only cited 1 source for most of the questions. **So perhaps we might need to add to the LLM Wiki SKILL.md to tell the LLM to cite all applicable sources when answering questions based on the wiki.**
+        - [test-results/my_answers_2_explicit_sources-wiki.xlsx](test-results/my_answers_2_explicit_sources-wiki.xlsx): Claude's answers to question type 2, but prompted to explicitly mention raw sources and wiki documents cited (FINAL BEST VERSION)
+        - [test-results/my_answers_2_onesource.xlsx](test-results/my_answers_2_onesource.xlsx): Claude's answers to question type 2, but I didn't explicitly tell it to cite "ALL applicable sources". Here, Claude only cited 1 source for most of the questions. **So perhaps we might need to add to the LLM Wiki SKILL.md to tell the LLM to cite all applicable sources when answering questions based on the wiki.**
     - **3: questions that may be ambigious/confusing (hardest?)**
     - **4: questions that ask about info that are not found in the original sources**
-        - `test-results/my_answers-3-4.xlsx`: Claude's answers to type 3 & 4
+        - [test-results/my_answers-3-4.xlsx](test-results/my_answers-3-4.xlsx): Claude's answers to type 3 & 4
 - `prompts/` : The prompts I used for each question type. See above for information about question types.
     - Question type 1: used a very simple prompt, just asked for question & answer, no special request.
     - question type 2: Added the following instruction for better citations: "cite ALL applicable sources from the current working directory. Sources are citable if the answer(s) to the question(s) are inside it.  In each answer, put in parentheses the raw source name and the llm wiki document that you found it from behind each cited important detail in the answer."
     - question types 3 & 4: same instructions as type 2
-- `ground-truth/` : the answer key (`qa_dataset.xlsx`). The rows highlighted in **GREEN** represent questions Claude answered correctly based on the generated LLM wiki. **YELLOW** means it was answered partially wrong. **GRAY** means these questions were skipped for the sake of time and completing the PoC sooner, since results seemed consistent.
+- `ground_truth/` : the answer key ([qa_dataset.xlsx](ground_truth/qa_dataset.xlsx)). The rows highlighted in **GREEN** represent questions Claude answered correctly based on the generated LLM wiki. **YELLOW** means it was answered partially wrong. **GRAY** means these questions were skipped for the sake of time and completing the PoC sooner, since results seemed consistent.
     - `documents/` : the (AI-generated) raw source documents  that were used to generate the LLM Wiki
 - `wiki/` : The LLM Wiki that I had Claude generate before I ran the tests (in a different session)
 
